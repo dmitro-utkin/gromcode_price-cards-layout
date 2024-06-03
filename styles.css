@@ -1,3 +1,86 @@
+* {
+  box-sizing: border-box;
+}
 
+.main {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 1440px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141b1c;
+}
+
+.price-card {
+  width: 380px;
+  height: 770px;
+  background-color: #334247;
+  color: #fff;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.0862745098);
+  text-align: center;
+  font-weight: 700;
+}
+.price-card__title {
+  font-size: 35px;
+  line-height: 43px;
+  margin-bottom: 0;
+}
+.price-card__under-title {
+  font-size: 20px;
+  line-height: 24px;
+}
+.price-card__price-container {
+  width: 380px;
+  height: 105px;
+  background: #5bb189;
+}
+.price-card__price {
+  font-size: 55px;
+  line-height: 67.05px;
+  margin-top: 33px;
+  margin-bottom: 0;
+  padding-top: 17px;
+}
+.price-card__description {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18.29px;
+  margin: 0;
+  padding: 40px 26px;
+}
+.price-card__options-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.price-card__options-list_item {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18.29px;
+  margin: 0;
+  padding-top: 18px;
+  padding-left: 22px;
+}
+.price-card__options-list_item::before {
+  content: url("../images/Shape.svg");
+  margin-right: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  vertical-align: middle;
+}
+.price-card__options-list_item:nth-child(odd) {
+  background-color: #2A3438;
+}
 
 /*# sourceMappingURL=styles.css.map */
