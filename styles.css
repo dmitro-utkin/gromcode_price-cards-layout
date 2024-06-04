@@ -22,7 +22,7 @@
 
 .price-card {
   width: 380px;
-  max-height: 770px;
+  height: auto;
   background-color: #334247;
   color: #fff;
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.0862745098);
@@ -90,6 +90,7 @@
   font-weight: 400;
   line-height: 17.07px;
   text-align: center;
+  border: none;
   background: #5bb189;
 }
 
