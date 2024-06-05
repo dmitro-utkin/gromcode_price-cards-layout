@@ -22,7 +22,7 @@
   line-height: 43px;
   margin-bottom: 0;
 }
-.price-card__under-title {
+.price-card__subtitle {
   font-size: 20px;
   line-height: 24px;
 }
@@ -32,7 +32,7 @@
 }
 .price-card__price {
   font-size: 55px;
-  line-height: 67.05px;
+  line-height: 67px;
   margin-top: 33px;
   margin-bottom: 0;
   padding-top: 17px;
@@ -40,7 +40,7 @@
 .price-card__description {
   font-size: 15px;
   font-weight: 300;
-  line-height: 18.29px;
+  line-height: 18px;
   margin: 0;
   padding: 40px 26px;
 }
@@ -51,6 +51,7 @@
   text-align: left;
 }
 .price-card__options-list_item {
+  max-height: 50px;
   font-size: 15px;
   font-weight: 300;
   line-height: 18px;
