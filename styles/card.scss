@@ -1,9 +1,9 @@
 .price-card {
   width: 380px;
   height: auto;
-  background-color: #334247;
-  color: #fff;
-  box-shadow: 0px 6px 6px 0px #00000016;
+  background-color: $card-color;
+  color: $text-color;
+  box-shadow: 0px 6px 6px 0px $shadow-color;
   text-align: center;
   font-weight: 700;
 
@@ -21,7 +21,6 @@
   &__price-container {
     width: 380px;
     height: 105px;
-    background: #5bb189;
   }
 
   &__price {
@@ -49,12 +48,12 @@
     &_item {
       font-size: 15px;
       font-weight: 300;
-      line-height: 18.29px;
+      line-height: 18px;
       margin: 0;
-      padding: 18px 22px 19px;
+      padding: 18px 59px 19px;
 
       &:nth-child(odd) {
-        background-color: #2a3438;
+        background-color: $dark-grey-color;
       }
     }
   }
@@ -66,32 +65,25 @@
     margin: 39px 113px 40px 112px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 17.07px;
+    line-height: 17px;
     text-align: center;
     border: none;
-    background: #5bb189;
     cursor: pointer;
   }
 }
 
 .basic-price {
   &__price-container {
-    background: #5bb189;
+    background: $green-color;
   }
 
-  &__item {
-    &::before {
-      content: url("../images/green-shape.png");
-      margin-right: 10px;
-      display: inline-block;
-      width: 15px;
-      height: 13px;
-      vertical-align: middle;
-    }
+  &__item{
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png)
+      no-repeat 22px 19px;
   }
 
   &__button {
-    background: #5bb189;
+    background: $green-color;
   }
 }
 
@@ -105,42 +97,30 @@
   }
 
   &__price-container {
-    background: #3a6ba5;
+    background: $blue-color;
   }
 
-  &__item {
-    &::before {
-      content: url("../images/blue-shape.png");
-      margin-right: 10px;
-      display: inline-block;
-      width: 15px;
-      height: 13px;
-      vertical-align: middle;
-    }
+  &__item{
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png)
+      no-repeat 22px 19px;
   }
 
   &__button {
-    background: #3a6ba5;
+    background: $blue-color;
   }
 }
 
 .webshop-price {
   &__price-container {
-    background: #ec632a;
+    background: $orange-color;
   }
 
   &__item {
-    &::before {
-      content: url("../images/orange-shape.png");
-      margin-right: 10px;
-      display: inline-block;
-      width: 15px;
-      height: 13px;
-      vertical-align: middle;
-    }
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png)
+      no-repeat 22px 19px;
   }
 
   &__button {
-    background: #ec632a;
+    background: $orange-color;
   }
 }

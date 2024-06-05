@@ -1,15 +1,17 @@
+@import 'variables.scss';
+@import 'main.scss';
+@import 'card.scss';
+
 * {
   box-sizing: border-box;
 }
 
-.main {
+body {
   font-family: 'Montserrat', Helvetica, sans-serif;
   display: flex;
   width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: $page-color;
 }
-
-@import 'body.scss';
-@import 'card.scss';
