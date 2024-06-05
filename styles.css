@@ -15,6 +15,7 @@
   width: 1440px;
   height: 1000px;
   display: flex;
+  gap: 18px;
   justify-content: center;
   align-items: center;
   background-color: #141b1c;
@@ -71,7 +72,7 @@
   padding: 18px 22px 19px;
 }
 .price-card__options-list_item::before {
-  content: url("../images/Shape.svg");
+  content: url("../images/green-shape.svg");
   margin-right: 10px;
   display: inline-block;
   width: 15px;
@@ -92,6 +93,59 @@
   text-align: center;
   border: none;
   background: #5bb189;
+}
+
+.basic-price__price-container {
+  background: #5bb189;
+}
+.basic-price__item::before {
+  content: url("../images/green-shape.svg");
+  margin-right: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  vertical-align: middle;
+}
+.basic-price__button {
+  background: #5bb189;
+}
+
+.business-price {
+  position: relative;
+}
+.business-price__img {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+}
+.business-price__price-container {
+  background: #3a6ba5;
+}
+.business-price__item::before {
+  content: url("../images/blue-shape.svg");
+  margin-right: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  vertical-align: middle;
+}
+.business-price__button {
+  background: #3a6ba5;
+}
+
+.webshop-price__price-container {
+  background: #ec632a;
+}
+.webshop-price__item::before {
+  content: url("../images/orange-shape.svg");
+  margin-right: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  vertical-align: middle;
+}
+.webshop-price__button {
+  background: #ec632a;
 }
 
 /*# sourceMappingURL=styles.css.map */

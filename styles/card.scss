@@ -54,7 +54,7 @@
       padding: 18px 22px 19px;
 
       &::before {
-        content: url("../images/Shape.svg");
+        content: url("../images/green-shape.svg");
         margin-right: 10px;
         display: inline-block;
         width: 15px;
@@ -79,5 +79,76 @@
     text-align: center;
     border: none;
     background: #5bb189;
+  }
+}
+
+.basic-price {
+  &__price-container {
+    background: #5bb189;
+  }
+
+  &__item {
+    &::before {
+      content: url("../images/green-shape.svg");
+      margin-right: 10px;
+      display: inline-block;
+      width: 15px;
+      height: 13px;
+      vertical-align: middle;
+    }
+  }
+
+  &__button {
+    background: #5bb189;
+  }
+}
+
+.business-price {
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+  }
+
+  &__price-container {
+    background: #3a6ba5;
+  }
+
+  &__item {
+    &::before {
+      content: url("../images/blue-shape.svg");
+      margin-right: 10px;
+      display: inline-block;
+      width: 15px;
+      height: 13px;
+      vertical-align: middle;
+    }
+  }
+
+  &__button {
+    background: #3a6ba5;
+  }
+}
+
+.webshop-price {
+  &__price-container {
+    background: #ec632a;
+  }
+
+  &__item {
+    &::before {
+      content: url("../images/orange-shape.svg");
+      margin-right: 10px;
+      display: inline-block;
+      width: 15px;
+      height: 13px;
+      vertical-align: middle;
+    }
+  }
+
+  &__button {
+    background: #ec632a;
   }
 }
