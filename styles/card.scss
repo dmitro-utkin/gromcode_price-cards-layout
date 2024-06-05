@@ -53,15 +53,6 @@
       margin: 0;
       padding: 18px 22px 19px;
 
-      &::before {
-        content: url("../images/green-shape.svg");
-        margin-right: 10px;
-        display: inline-block;
-        width: 15px;
-        height: 13px;
-        vertical-align: middle;
-      }
-
       &:nth-child(odd) {
         background-color: #2a3438;
       }
@@ -89,7 +80,7 @@
 
   &__item {
     &::before {
-      content: url("../images/green-shape.svg");
+      content: url("../images/green-shape.png");
       margin-right: 10px;
       display: inline-block;
       width: 15px;
@@ -118,7 +109,7 @@
 
   &__item {
     &::before {
-      content: url("../images/blue-shape.svg");
+      content: url("../images/blue-shape.png");
       margin-right: 10px;
       display: inline-block;
       width: 15px;
@@ -139,7 +130,7 @@
 
   &__item {
     &::before {
-      content: url("../images/orange-shape.svg");
+      content: url("../images/orange-shape.png");
       margin-right: 10px;
       display: inline-block;
       width: 15px;
