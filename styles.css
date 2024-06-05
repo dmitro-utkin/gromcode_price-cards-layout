@@ -20,6 +20,7 @@
 .price-card__title {
   font-size: 35px;
   line-height: 43px;
+  margin-top: 33px;
   margin-bottom: 0;
 }
 .price-card__subtitle {
