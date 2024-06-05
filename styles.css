@@ -92,6 +92,7 @@
   position: absolute;
   top: -18px;
   right: -18px;
+  z-index: 2;
 }
 .business-price__price-container {
   background: #3a6ba5;
