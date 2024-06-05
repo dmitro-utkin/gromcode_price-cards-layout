@@ -90,11 +90,17 @@
 .business-price {
   position: relative;
 }
-.business-price__img {
+.business-price__badge {
   position: absolute;
-  top: -18px;
-  right: -18px;
-  z-index: 2;
+  width: 147px;
+  height: 25px;
+  line-height: 25px;
+  top: 30px;
+  right: -30px;
+  transform: rotate(45deg);
+  background-color: #DC3F45;
+  text-transform: uppercase;
+  clip-path: polygon(17% 0, 83% 0, 100% 100%, 0% 100%);
 }
 .business-price__price-container {
   background: #3a6ba5;

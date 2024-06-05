@@ -71,7 +71,7 @@
     line-height: 17px;
     text-align: center;
     border: none;
-    color:$text-color;
+    color: $text-color;
     cursor: pointer;
   }
 }
@@ -81,8 +81,8 @@
     background: $green-color;
   }
 
-  &__item{
-      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png)
+  &__item {
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png)
       no-repeat 22px 19px;
   }
 
@@ -94,19 +94,25 @@
 .business-price {
   position: relative;
 
-  &__img {
+  &__badge {
     position: absolute;
-    top: -18px;
-    right: -18px;
-    z-index: 2;
+    width: 147px;
+    height: 25px;
+    line-height: 25px;
+    top: 30px;
+    right: -30px;
+    transform: rotate(45deg);
+    background-color: $badge-color;
+    text-transform: uppercase;
+    clip-path: polygon(17% 0, 83% 0, 100% 100%, 0% 100%);
   }
 
   &__price-container {
     background: $blue-color;
   }
 
-  &__item{
-      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png)
+  &__item {
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png)
       no-repeat 22px 19px;
   }
 
@@ -121,7 +127,7 @@
   }
 
   &__item {
-      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png)
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png)
       no-repeat 22px 19px;
   }
 
