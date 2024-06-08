@@ -1,6 +1,7 @@
 .price-card {
   width: 380px;
-  height: auto;
+  height: 770px;
+  position: relative;
   background-color: $card-color;
   color: $text-color;
   box-shadow: 0px 6px 6px 0px $shadow-color;
@@ -8,10 +9,9 @@
   font-weight: 700;
 
   &__title {
+    margin: 33px 0 0 0;
     font-size: 35px;
     line-height: 43px;
-    margin-top: 33px;
-    margin-bottom: 0;
   }
 
   &__subtitle {
@@ -23,41 +23,75 @@
   &__price-container {
     width: 380px;
     height: 105px;
+
+    &_green {
+      background-color: $green-color;
+    }
+
+    &_blue {
+      background-color: $blue-color;
+    }
+
+    &_orange {
+      background-color: $orange-color;
+    }
   }
 
   &__price {
+    margin-top: 33px;
+    padding-top: 17px;
     font-size: 55px;
     line-height: 67px;
-    margin-top: 33px;
-    margin-bottom: 0;
-    padding-top: 17px;
   }
 
   &__description {
+    margin: 0;
+    padding: 40px 26px;
     font-size: 15px;
     font-weight: 300;
     line-height: 18px;
-    margin: 0;
-    padding: 40px 26px;
   }
 
   &__options-list {
-    list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     text-align: left;
+    list-style-type: none;
+  }
 
-    &_item {
-      max-height: 50px;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 18px;
-      margin: 0;
-      padding: 18px 59px 19px;
+  &__options-list-item {
+    display: flex;
+    max-height: 50px;
+    margin: 0;
+    padding: 18px 22px 19px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
 
-      &:nth-child(odd) {
-        background-color: $dark-grey-color;
-      }
+    &:nth-child(odd) {
+      background-color: $dark-grey-color;
+    }
+  }
+
+  &__checkmark {
+    display: block;
+    margin-right: 22px;
+    width: 15px;
+    height: 13px;
+
+    &_green {
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png)
+        no-repeat;
+    }
+
+    &_blue {
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png)
+        no-repeat;
+    }
+
+    &_orange {
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png)
+        no-repeat;
     }
   }
 
@@ -73,65 +107,30 @@
     border: none;
     color: $text-color;
     cursor: pointer;
+
+    &_green {
+      background-color: $green-color;
+    }
+
+    &_blue {
+      background-color: $blue-color;
+    }
+
+    &_orange {
+      background-color: $orange-color;
+    }
   }
 }
 
-.basic-price {
-  &__price-container {
-    background: $green-color;
-  }
-
-  &__item {
-    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png)
-      no-repeat 22px 19px;
-  }
-
-  &__button {
-    background: $green-color;
-  }
-}
-
-.business-price {
-  position: relative;
-
-  &__badge {
-    position: absolute;
-    width: 147px;
-    height: 25px;
-    line-height: 25px;
-    top: 30px;
-    right: -30px;
-    transform: rotate(45deg);
-    background-color: $badge-color;
-    text-transform: uppercase;
-    clip-path: polygon(17% 0, 83% 0, 100% 100%, 0% 100%);
-  }
-
-  &__price-container {
-    background: $blue-color;
-  }
-
-  &__item {
-    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png)
-      no-repeat 22px 19px;
-  }
-
-  &__button {
-    background: $blue-color;
-  }
-}
-
-.webshop-price {
-  &__price-container {
-    background: $orange-color;
-  }
-
-  &__item {
-    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png)
-      no-repeat 22px 19px;
-  }
-
-  &__button {
-    background: $orange-color;
-  }
+.popular-badge {
+  position: absolute;
+  width: 147px;
+  height: 25px;
+  line-height: 25px;
+  top: 30px;
+  right: -30px;
+  transform: rotate(45deg);
+  background-color: $badge-color;
+  text-transform: uppercase;
+  clip-path: polygon(17% 0, 83% 0, 100% 100%, 0% 100%);
 }

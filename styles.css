@@ -5,12 +5,13 @@
   gap: 18px;
   justify-content: center;
   align-items: center;
-  background-color: #141B1C;
+  background-color: #141b1c;
 }
 
 .price-card {
   width: 380px;
-  height: auto;
+  height: 770px;
+  position: relative;
   background-color: #334247;
   color: #fff;
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.0862745098);
@@ -18,10 +19,9 @@
   font-weight: 700;
 }
 .price-card__title {
+  margin: 33px 0 0 0;
   font-size: 35px;
   line-height: 43px;
-  margin-top: 33px;
-  margin-bottom: 0;
 }
 .price-card__subtitle {
   font-size: 20px;
@@ -32,36 +32,60 @@
   width: 380px;
   height: 105px;
 }
+.price-card__price-container_green {
+  background-color: #5bb189;
+}
+.price-card__price-container_blue {
+  background-color: #3a6ba5;
+}
+.price-card__price-container_orange {
+  background-color: #ec632a;
+}
 .price-card__price {
+  margin-top: 33px;
+  padding-top: 17px;
   font-size: 55px;
   line-height: 67px;
-  margin-top: 33px;
-  margin-bottom: 0;
-  padding-top: 17px;
 }
 .price-card__description {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 18px;
   margin: 0;
   padding: 40px 26px;
-}
-.price-card__options-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-.price-card__options-list_item {
-  max-height: 50px;
   font-size: 15px;
   font-weight: 300;
   line-height: 18px;
-  margin: 0;
-  padding: 18px 59px 19px;
 }
-.price-card__options-list_item:nth-child(odd) {
+.price-card__options-list {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style-type: none;
+}
+.price-card__options-list-item {
+  display: flex;
+  max-height: 50px;
+  margin: 0;
+  padding: 18px 22px 19px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.price-card__options-list-item:nth-child(odd) {
   background-color: #2a3438;
+}
+.price-card__checkmark {
+  display: block;
+  margin-right: 22px;
+  width: 15px;
+  height: 13px;
+}
+.price-card__checkmark_green {
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png) no-repeat;
+}
+.price-card__checkmark_blue {
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png) no-repeat;
+}
+.price-card__checkmark_orange {
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png) no-repeat;
 }
 .price-card__button {
   width: 155px;
@@ -76,21 +100,17 @@
   color: #fff;
   cursor: pointer;
 }
+.price-card__button_green {
+  background-color: #5bb189;
+}
+.price-card__button_blue {
+  background-color: #3a6ba5;
+}
+.price-card__button_orange {
+  background-color: #ec632a;
+}
 
-.basic-price__price-container {
-  background: #5bb189;
-}
-.basic-price__item {
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png) no-repeat 22px 19px;
-}
-.basic-price__button {
-  background: #5bb189;
-}
-
-.business-price {
-  position: relative;
-}
-.business-price__badge {
+.popular-badge {
   position: absolute;
   width: 147px;
   height: 25px;
@@ -98,28 +118,9 @@
   top: 30px;
   right: -30px;
   transform: rotate(45deg);
-  background-color: #DC3F45;
+  background-color: #dc3f45;
   text-transform: uppercase;
   clip-path: polygon(17% 0, 83% 0, 100% 100%, 0% 100%);
-}
-.business-price__price-container {
-  background: #3a6ba5;
-}
-.business-price__item {
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png) no-repeat 22px 19px;
-}
-.business-price__button {
-  background: #3a6ba5;
-}
-
-.webshop-price__price-container {
-  background: #ec632a;
-}
-.webshop-price__item {
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png) no-repeat 22px 19px;
-}
-.webshop-price__button {
-  background: #ec632a;
 }
 
 * {
@@ -133,7 +134,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #141b1c;
 }
 
 /*# sourceMappingURL=styles.css.map */
