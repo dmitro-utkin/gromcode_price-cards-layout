@@ -1,6 +1,6 @@
 ### Project: Price cards
 
-### [Site link](https://dmitro-utkin.github.io/price-cards-layout/)
+### [Site link](https://dmitro-utkin.github.io/gromcode_price-cards-layout/)
 
 ### The tech stack is:
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
