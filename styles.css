@@ -8,6 +8,19 @@
   background-color: #141b1c;
 }
 
+.popular-badge {
+  position: absolute;
+  width: 147px;
+  height: 25px;
+  line-height: 25px;
+  top: 30px;
+  right: -30px;
+  transform: rotate(45deg);
+  background-color: #dc3f45;
+  text-transform: uppercase;
+  clip-path: polygon(17% 0, 83% 0, 100% 100%, 0% 100%);
+}
+
 .price-card {
   width: 380px;
   height: 770px;
@@ -31,6 +44,10 @@
 .price-card__price-container {
   width: 380px;
   height: 105px;
+  margin-top: 33px;
+  padding-top: 17px;
+  font-size: 55px;
+  line-height: 67px;
 }
 .price-card__price-container_green {
   background-color: #5bb189;
@@ -40,12 +57,6 @@
 }
 .price-card__price-container_orange {
   background-color: #ec632a;
-}
-.price-card__price {
-  margin-top: 33px;
-  padding-top: 17px;
-  font-size: 55px;
-  line-height: 67px;
 }
 .price-card__description {
   margin: 0;
@@ -60,7 +71,7 @@
   text-align: left;
   list-style-type: none;
 }
-.price-card__options-list-item {
+.price-card__option {
   display: flex;
   max-height: 50px;
   margin: 0;
@@ -69,7 +80,7 @@
   font-weight: 300;
   line-height: 18px;
 }
-.price-card__options-list-item:nth-child(odd) {
+.price-card__option:nth-child(odd) {
   background-color: #2a3438;
 }
 .price-card__checkmark {
@@ -110,19 +121,6 @@
   background-color: #ec632a;
 }
 
-.popular-badge {
-  position: absolute;
-  width: 147px;
-  height: 25px;
-  line-height: 25px;
-  top: 30px;
-  right: -30px;
-  transform: rotate(45deg);
-  background-color: #dc3f45;
-  text-transform: uppercase;
-  clip-path: polygon(17% 0, 83% 0, 100% 100%, 0% 100%);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -137,3 +135,5 @@ body {
   background-color: #141b1c;
   overflow: hidden;
 }
+
+/*# sourceMappingURL=styles.css.map */

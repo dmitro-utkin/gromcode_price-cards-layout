@@ -23,6 +23,10 @@
   &__price-container {
     width: 380px;
     height: 105px;
+    margin-top: 33px;
+    padding-top: 17px;
+    font-size: 55px;
+    line-height: 67px;
 
     &_green {
       background-color: $green-color;
@@ -35,13 +39,6 @@
     &_orange {
       background-color: $orange-color;
     }
-  }
-
-  &__price {
-    margin-top: 33px;
-    padding-top: 17px;
-    font-size: 55px;
-    line-height: 67px;
   }
 
   &__description {
@@ -59,7 +56,7 @@
     list-style-type: none;
   }
 
-  &__options-list-item {
+  &__option {
     display: flex;
     max-height: 50px;
     margin: 0;
@@ -120,17 +117,4 @@
       background-color: $orange-color;
     }
   }
-}
-
-.popular-badge {
-  position: absolute;
-  width: 147px;
-  height: 25px;
-  line-height: 25px;
-  top: 30px;
-  right: -30px;
-  transform: rotate(45deg);
-  background-color: $badge-color;
-  text-transform: uppercase;
-  clip-path: polygon(17% 0, 83% 0, 100% 100%, 0% 100%);
 }
